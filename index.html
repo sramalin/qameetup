@@ -7,127 +7,107 @@
      <link href="./styles.css" rel="stylesheet">
      <style>
     body{
-    margin: 0;
-    font-family: 'Kaushan Script';
+margin: 0;
+    font-family: 'Lato';
+    color: black
     }     
     header{ 
-        position: relative;
+        overflow: auto;
+         position: relative;
          background-image: linear-gradient(to bottom, rgba(64, 62, 58, 0.74),hsla(173, 19%, 10%, 0.74)), url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
-         height: 40rem;
+         height: 105%;
          background-size: cover;
          background-position: bottom;
-         clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 72%, 0 0);
          font-family: 'Lato', sans-serif;
-    }
-    h1 {
-        position: absolute;
-        font-family: 'Kaushan Script';
-        top: 6rem;
-        left: 50%;
-        transform: translateX(-50%);
-        color:aliceblue;
-       
-
-    }
-    h2:not(:first-child) {
+         }
+    ul{
+   
         text-align: center;
-        color: aliceblue;
-    }
-    img {
-        background-position: cover;
-        background-size: cover;
-        background-image: black;
-    }
-    li{
-        float: right;
-        list-style: none;
-        padding: 0.8rem;
-        margin: 1.2rem 2.5rem;
-        color:aliceblue;
-        
-  
-    }
-    li:last-child{
-    text-underline-position: under;
-    
-    }
-    li:last-child>a{
-     color: white;
-    }
-  
-    .row{
-     height: 20rem;
-     width: 100%;
-  
-     text-align: center;
-    }
-    .row >div{
-        display: inline-block;
-     
-
-    }
-    .row>div:not(:last-child){
-        margin-right: 6rem; ;
-    }
-    i {
-        font-size: 3rem;
-    }
-    .logo {
-        position: absolute;
-        margin:1rem;
-     
+        padding: 1rem 3rem;
         
 
-    }
-    .logo1{
-    width: 5rem;
-    height: 5rem;
-    
-    
-    }
-    .icon-software-vector-composite{
-        font-size: 12px;
-        
-    }
-    .section-details{
-        background-color:blueviolet;
-        height: 45px;
-    }
-    .details{
-        margin-top:10rem;
-        position: absolute;
-    }
 
-    .column1{
-        width:30.5rem;
-        padding: 2rem 2rem;
-        display: inline-block;
-        line-height: 0.1rem;
-        color:white;
-        height: 14.80075rem;
-     
-    }
-    .h2{
-        text-align: center;
-    }
+    }  
+    ul:after ,span:after,.row:after{
 
-     </style>
+    display: block;
+    content: "";
+    clear: both;
+  
+  
+   }  
+   ul >li ,ul>li>a{
+   list-style: none;
+      float: right;
+    text-decoration: none;
+   } 
+   .logo{
+    position: absolute;
+      
+   }
+   .logo1{
+       width: 4rem;
+       height: 4rem;
+
+   }
+
+   li:not(:first-child){
+    margin-right:4rem; 
+
+   }
+   .heading{
+       padding: 1rem 1rem;
+       text-align: center;
+       line-height: 0.5rem
+   }
+
+   .row:not(:last-child){
+       text-align: center;
+       line-height: 0.2rem;
+  
+   }
+   .column1{
+       float:left;
+   }
+   .column1{
+    margin: 1rem 5rem ;
+   }
+   .topics{
+       text-align: center;
+   }
+   .icon{
+       display: inline-block;
+       margin: 2rem;
+   }
+i{
+    font-size: 2.5rem;
+
+}
+
+   
+
+    </style>
 
  </head>
  <body>
+     <div>
      <header>
-      <div class="logo">
-            <img class="logo1" src="./Quintype_Logo.svg" alt="hello">
-      </div>
+            <div class="logo">
+                    <img class="logo1" src="./Quintype_Logo.svg" alt="hello">
+                    </div>  
+            <ul>  
+                      
+                    <li>About US</li>   
+                    <li>Headin2</li>   
+                    <li>Heading3</li> 
+                    <li><a href="https://www.quintype.com/">About Us</a></li>   
+            </ul>
+    
       <div class="heading">
-       <h1>THIRD EYE - QA MEETUP</h1>
+       <span><h1>THIRD EYE</h1></span>
+       <span> <h3>Meetup event organised by the QA team of Quintype</h3></span>
     </div>
-      <ul>  
-      <li>About US</li>   
-      <li>Headin2</li>   
-      <li>Heading3</li> 
-      <li><a href="https://www.quintype.com/">About Us</a></li>   
-       </ul>
+      
        <div class="row details">
       <div class="column1">
       <h2>AGENDA</h2>
@@ -169,40 +149,33 @@
 
       </div>   
      </div>
-
+     <div>
+         <div class="topics">
+                <h2 class="h2">Topics</h2>
+                <div class="row">
+                    <div class="icon">
+                    <i class="icon-software-layers2"></i>
+                    <h3>Appium -Talk</br></br></h3>
+                   </div>
+                   <div class="icon">
+                        <i class="icon-software-scale-expand"></i>
+                        <h3>Regression Testing in</br>large enterprise companies</h3>
+                         
+                        </div>
+                        <div class="icon">
+                                <i class="icon-software-pages"></i>
+                                <h3>SEO -TAlk</br></br> </h3>
+                               </div>
+                               <div class="icon">
+                                    <i class="icon-software-vertical-distribute-bottom"></i>
+                                    <h3> BDD & TDD - Workshop</br></br> </h3>     
+                                   </div>
+                        
+                    </div>
+                </div>
     </header>
+  
     
       
- 
-    <section class="topics">
-        <h2 class="h2">Topics</h2>
-        <div class="row">
-            <div>
-            <i class="icon-software-layers2"></i>
-            <h3>Appium -Talk</br></br></h3>
-           
-            </div>
-            <div>
-            <i class="icon-software-scale-expand"></i>
-            <h3>Regression Testing in</br>large enterprise companies</h3>
-             
-            </div>
-            
-            <div>
-            <i class="icon-software-pages"></i>
-            <h3>SEO -TAlk</br></br> </h3>
-           </div>
-           <div>
-            <i class="icon-software-vertical-distribute-bottom"></i>
-            <h3> BDD & TDD - Workshop</br></br> </h3>     
-           </div>
-    </div>
-     </div>
-
-
-    </section>
-
-
- </body>   
-</html>
-
+ <div>
+    
