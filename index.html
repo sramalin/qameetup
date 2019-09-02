@@ -10,7 +10,7 @@
     margin: 0;
     font-family: 'Kaushan Script';
     }     
-    header{
+    header{ 
         position: relative;
          background-image: linear-gradient(to bottom, rgba(64, 62, 58, 0.74),hsla(173, 19%, 10%, 0.74)), url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
          height: 40rem;
@@ -29,8 +29,9 @@
        
 
     }
-    h2 {
+    h2:not(:first-child) {
         text-align: center;
+        color: aliceblue;
     }
     img {
         background-position: cover;
@@ -41,7 +42,7 @@
         float: right;
         list-style: none;
         padding: 0.8rem;
-        margin: 3 2.5rem;
+        margin: 1.2rem 2.5rem;
         color:aliceblue;
         
   
@@ -53,12 +54,12 @@
     li:last-child>a{
      color: white;
     }
-
-    .row{
-     
- height: 20rem;
   
-        text-align: center;
+    .row{
+     height: 20rem;
+     width: 100%;
+  
+     text-align: center;
     }
     .row >div{
         display: inline-block;
@@ -66,49 +67,142 @@
 
     }
     .row>div:not(:last-child){
-        margin-right: 12rem; ;
+        margin-right: 6rem; ;
     }
     i {
         font-size: 3rem;
     }
+    .logo {
+        position: absolute;
+        margin:1rem;
+     
+        
+
+    }
+    .logo1{
+    width: 5rem;
+    height: 5rem;
     
+    
+    }
+    .icon-software-vector-composite{
+        font-size: 12px;
+        
+    }
+    .section-details{
+        background-color:blueviolet;
+        height: 45px;
+    }
+    .details{
+        margin-top:10rem;
+        position: absolute;
+    }
+
+    .column1{
+        width:30.5rem;
+        padding: 2rem 2rem;
+        display: inline-block;
+        line-height: 0.1rem;
+        color:white;
+        height: 14.80075rem;
+     
+    }
+    .h2{
+        text-align: center;
+    }
 
      </style>
 
  </head>
  <body>
      <header>
-         <h1>
-             THIRD EYE - QA MEETUP
-         </h1>
+      <div class="logo">
+            <img class="logo1" src="./Quintype_Logo.svg" alt="hello">
+      </div>
+      <div class="heading">
+       <h1>THIRD EYE - QA MEETUP</h1>
+    </div>
+      <ul>  
       <li>About US</li>   
       <li>Headin2</li>   
       <li>Heading3</li> 
       <li><a href="https://www.quintype.com/">About Us</a></li>   
+       </ul>
+       <div class="row details">
+      <div class="column1">
+      <h2>AGENDA</h2>
+    </br>
+<pre>- Opening Key note                                 : 10:00 - 10:30   </pre>
+</br>
+<pre>- Appium                                           : 10:35 - 11:00   </pre>
+</br>
+<pre>- Regression testing in large enterprise teams     : 11:05 - 11:30   </pre>
+</br>
+<pre>- Break                                            : 11:30 - 11:45    </pre>
+</br>
+<pre>- SEO                                              : 11:45 - 12:15    </pre>
+</br>
+<pre>- BDD (cucumber and ruby)                          : 12:20 - 01:30    </pre>
+</br>
+<pre>- Networking                                       : 1:30             </pre>
+
+
+      </div>
+      <div class="column1">
+      <h2>Venue</h2></br>
+      <pre>Quintype Technologies                     </pre>
+      </br>
+      <pre>#29, 3rd Floor                            </pre>
+      </br>
+      <pre>Old Airport Road, Opposite Kemp Fort Mall,</pre>
+      </br>
+      <pre>Murgesh Palya, Bengaluru                  </pre>
+      </br>
+      <pre>Karnataka 560017                          </pre>
+       </br>
+      <pre> </pre>
+    </br>
+    <pre> </pre>
+      
+
+      
+
+      </div>   
+     </div>
 
     </header>
+    
+      
+ 
     <section class="topics">
-        <h2>Topics</h2>
+        <h2 class="h2">Topics</h2>
         <div class="row">
             <div>
             <i class="icon-software-layers2"></i>
-            <h3>Appium -Talk</h3>
+            <h3>Appium -Talk</br></br></h3>
+           
             </div>
             <div>
-                <i class="icon-software-vertical-distribute-bottom"></i>
-                    <h3> BDD & TDD - Workshop</h3>       
-           
+            <i class="icon-software-scale-expand"></i>
+            <h3>Regression Testing in</br>large enterprise companies</h3>
+             
             </div>
             
             <div>
-                   <i class="icon-software-pages"></i>
-                    <h3>SEO -TAlk</h3>
+            <i class="icon-software-pages"></i>
+            <h3>SEO -TAlk</br></br> </h3>
            </div>
-           
-        </div>
+           <div>
+            <i class="icon-software-vertical-distribute-bottom"></i>
+            <h3> BDD & TDD - Workshop</br></br> </h3>     
+           </div>
+    </div>
+     </div>
+
 
     </section>
 
 
  </body>   
 </html>
+hdh
