@@ -3,29 +3,47 @@
      <title> QA Meetup</title>
      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+     <link href="" rel="stylesheet">
+     <link href="./styles.css" rel="stylesheet">
      <style>
     body{
     margin: 0;
     font-family: 'Kaushan Script';
     }     
     header{
-         background-image: linear-gradient( rgba(54, 51, 48, 0.938),rgba(86, 88, 80, 0.2)), url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+        position: relative;
+         background-image: linear-gradient(to bottom, rgba(64, 62, 58, 0.74),hsla(173, 19%, 10%, 0.74)), url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
          height: 40rem;
          background-size: cover;
          background-position: bottom;
-         clip-path: polygon(100% 0, 100% 70%, 50% 83%, 0 70%, 0 0);
+         clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 72%, 0 0);
          font-family: 'Lato', sans-serif;
+    }
+    h1 {
+        position: absolute;
+        font-family: 'Kaushan Script';
+        top: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color:aliceblue;
+       
+
+    }
+    h2 {
+        text-align: center;
     }
     img {
         background-position: cover;
         background-size: cover;
+        background-image: black;
     }
     li{
         float: right;
         list-style: none;
         padding: 0.8rem;
         margin: 3 2.5rem;
-        color: white; 
+        color:aliceblue;
+        
   
     }
     li:last-child{
@@ -36,16 +54,60 @@
      color: white;
     }
 
+    .row{
+     
+ height: 20rem;
+  
+        text-align: center;
+    }
+    .row >div{
+        display: inline-block;
+     
+
+    }
+    .row>div:not(:last-child){
+        margin-right: 12rem; ;
+    }
+    i {
+        font-size: 3rem;
+    }
+    
+
      </style>
 
  </head>
  <body>
      <header>
+         <h1>
+             THIRD EYE - QA MEETUP
+         </h1>
       <li>About US</li>   
       <li>Headin2</li>   
-      <li>Heading</li>   
+      <li>Heading3</li> 
       <li><a href="https://www.quintype.com/">About Us</a></li>   
+
     </header>
+    <section class="topics">
+        <h2>Topics</h2>
+        <div class="row">
+            <div>
+            <i class="icon-software-layers2"></i>
+            <h3>Appium -Talk</h3>
+            </div>
+            <div>
+                <i class="icon-software-vertical-distribute-bottom"></i>
+                    <h3> BDD & TDD - Workshop</h3>       
+           
+            </div>
+            
+            <div>
+                   <i class="icon-software-pages"></i>
+                    <h3>SEO -TAlk</h3>
+           </div>
+           
+        </div>
+
+    </section>
 
 
  </body>   
