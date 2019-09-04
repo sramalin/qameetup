@@ -1,218 +1,342 @@
-<html>
- <head>
-     <title> QA Meetup</title>
-     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-     
-     <link href="" rel="stylesheet">
-     <link href="./styles.css" rel="stylesheet">
-     <style>
-    body{
-        
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        scroll-behavior: smooth;   
-        font-weight: bolder; 
-    margin: 0;
-    font-family: 'Lato';
-    color: black
-    }     
-    header{ 
-        overflow: auto;
-         position: relative;
-         background-image: linear-gradient(to bottom, rgba(250, 246, 240, 0.6),hsla(174, 82%, 85%, 0.6)), url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-         height: 105%;
-         background-size: cover;
-         background-position: bottom;
-     font-family: 'Roboto', sans-serif;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>THIRD EYE QA MEETUP - Quintype Technologis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-         }
-         h3,pre>a{
-     font-family: 'Montserrat', sans-serif;
-         }
-    ul{
-   
-        text-align: center;
-        padding: 1rem 3rem;
-        
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-
-    }  
-    ul:after ,span:after,.row:after{
-
-    display: block;
-    content: "";
-    clear: both;
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
   
-  
-   }  
-   ul >li ,ul>li>a{
-   list-style: none;
-    float: right;
-    text-decoration: none;
-   } 
-   .logo{
-       padding: 0.7rem 4rem;
-    position: absolute;
-      
-   }
-   .logo1{
-       width: 5rem;
-       height: 5rem;
+  <div class="site-wrap">
 
-   }
-
-   li{
-    margin-right:6.5rem; 
-
-   }
-   .heading{
-       padding: 1rem 1rem;
-       text-align: center;
-       line-height: 0.5rem
-   }
-
-   .row:not(:last-child){
-       text-align: center;
-       line-height: 0.2rem;
-  
-   }
-   .column1{
-       float:left;
-   }
-   .column1{
-    margin: 1rem 5rem ;
-   }
-   .topics{
-       text-align: center;
-   }
-   .icon{
-       display: inline-block;
-       margin: 2rem;
-   }
-i{
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-
-}
-a{
-    text-decoration: none;
-
-  
-}
-
-.register{
-    background-color: aqua;
-    margin: 0.5rem 0;
-    padding: 0.5rem 0;
-    background-color: antiquewhite;
-    border-radius: 2rem;
-
-}
-img{
-
-}
-
-   
-
-    </style>
-
- </head>
- <body>
-     <div>
-     <header>
-        
-            <div class="logo">
-              <img  class="logo1" src="./Quintype_Logo.svg"/>      
-            </div>  
-            <ul>  
-                    
-                      
-                 
-                    
-                    <li><a href="https://blog.quintype.com">Quintype Blog</a></li> 
-                    <li><a href="https://www.quintype.com/">About Us</a></li>   
-            </ul>
-    
-      <div class="heading">
-       <span><h1>THIRD EYE</h1></span>
-       <span> <h3>Meetup event organised by the QA team of Quintype</h3></span>
-    </div>
-      
-       <div class="row details">
-      <div class="column1">
-      <h2>AGENDA</h2>
-    </br>
-<pre>- Opening Key note                                 : 10:00 - 10:30    </pre>
-</br>
-<pre>- Appium                                           : 10:35 - 11:00    </pre>
-</br>
-<pre>- Regression testing in large enterprise teams     : 11:05 - 11:30    </pre>
-</br>
-<pre>- Break                                            : 11:30 - 11:45    </pre>
-</br>
-<pre>- SEO                                              : 11:45 - 12:15    </pre>
-</br>
-<pre>- BDD (cucumber and ruby)                          : 12:20 - 01:30    </pre>
-</br>
-<pre>- Networking                                       : 1:30             </pre>
-
-
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
       </div>
-      <div class="column1">
-      <h2>Venue</h2></br>
-      <pre>  Quintype Technologies                     </pre>
-      </br>
-      <pre>  #29, 3rd Floor                            </pre>
-      </br>
-      <pre>  Old Airport Road, Opposite Kemp Fort Mall,</pre>
-      </br>
-      <pre>  Murgesh Palya, Bengaluru                  </pre>
-      </br>
-      <pre>  Karnataka 560017                          </pre>
-       </br>
-      <pre>  Date : 14 September 2019                  </pre>
-      <pre> </pre>
-    </br>
-    <pre> </pre>
-    <div class="register">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-n_uLpwF7oerHR43LdRGLEe0IRedGv2XXE7NC2K7wAF-W-Q/viewform"><p> REGISTER &#x2710</p></a>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-3" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Third<span class="text-primary">Eye</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                
+                <li class="cta"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd-n_uLpwF7oerHR43LdRGLEe0IRedGv2XXE7NC2K7wAF-W-Q/viewform">Register</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section site-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">Quintype technologies</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">THIRD EYE <br>QA MEETUP</h1>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">September 14th, 2019 , Banglore, India</span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-n_uLpwF7oerHR43LdRGLEe0IRedGv2XXE7NC2K7wAF-W-Q/viewform" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>Register</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>Topics</h2>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="images/topic_1.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Appium - Lets automate mobile</h2>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Talk - 25 minutes</span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Regression testing in large enterprise teams</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Talk - 25 minutes</span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">A quick glimpse on the regression testing scenario in large enterprise product teams. An interactive session focusses on how to effectively plan a qualification cycle in large product teams.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="images/topics_3.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Search Engine Optimization</h2>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Talk - 25 minutes</span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam</p>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/BDD_2.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200"> Behaviour-Driver Develpment</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Workshop - 70 minutes</span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam</p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+    
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>Agenda</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.</p>
+          </div>
+        </div>
+
+        <div class="row align-items-stretch program">
+          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Opening Key Note</h2>
+                <span>By Ramalingam</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:35</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Appium</h2>
+                <span> Presented by </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:05</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Regression Testing in Large Enterprise Teams</h2>
+                <span> Presented by - </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:30</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Break</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="600">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:45</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Talk on Search Engine Optimization</h2>
+                <span> Presented by - </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">12:20</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Workshop on Behaviour-Driver Develpment</h2>
+                <span> Presented by - </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">13:30</span> <span>hrs</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">Networking</h2>
+              </div>
+            </div>
+          </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <div class="site-section-heading" data-aos="fade-up">
+              <h2>Blog</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p></p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry"  data-aos="fade-up" data-aos-delay="200">
+            <a href="https://blog.quintype.com/people/the-outset-of-quintype-qa-meetup-4th-august-2018" class="d-block mb-4">
+              <img src="images/qameetup_blog.png" alt="Image" class="img-fluid"> 
+            </a>
+            <h2 class="mb-4"><a href="#">The outset of ‘Quintype QA’ meetup - 4th August 2018</a></h2>
+            <div class="mb-4 post-meta d-flex align-items-center">
+              <div class="mr-2"><img src="images/topic_1.jpg" alt="Image" class="img-fluid"></div>
+              <div><span>By <a href="https://blog.quintype.com/author/papia-sen">Papia Sen</a></span> &mdash; <span>Aug. 24, 2018</span></div> 
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.
+          </div>
+
+         <!--  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="d-block mb-4">
+              <img hre src="images/topic_1.jpg" alt="Image" class="img-fluid"> 
+            </a>
+            <h2 class="mb-4"><a href="#">Design your open source strategy</a></h2>
+            <div class="mb-4 post-meta d-flex align-items-center">
+              <div class="mr-2"><img src="images/topic_1.jpg" alt="Image" class="img-fluid"></div>
+              <div><span>By <a href="#">Emely Peters</a></span> &mdash; <span>Sep. 10, 2019</span></div> 
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="400">
+            <a href="#" class="d-block mb-4">
+              <img src="images/topic_1.jpg" alt="Image" class="img-fluid"> 
+            </a>
+            <h2 class="mb-4"><a href="#">Design your open source strategy</a></h2>
+            <div class="mb-4 post-meta d-flex align-items-center">
+              <div class="mr-2"><img src="images/topic_1.jpg" alt="Image" class="img-fluid"></div>
+              <div><span>By <a href="#">Emely Peters</a></span> &mdash; <span>Sep. 10, 2019</span></div> 
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.
+          </div> -->
+
+
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-12 text-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-n_uLpwF7oerHR43LdRGLEe0IRedGv2XXE7NC2K7wAF-W-Q/viewform" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>Register</span></a>
+          </div>
+        </div>
+      </div>
     </div>
       
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">About Event</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit aliquid quibusdam fugit architecto.</p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <!-- <li><a href="#">Topics</a></li> -->
+  <!--             <li><a href="#">Gallery</a></li> -->
+              <li><a href=“mailto:sales@quintype.com”>qa@quintype.com</a></li> 
+          </div>
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+            <p>
+              <a href="https://www.facebook.com/Quintypetechnologies/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/quintype_inc" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="https://www.linkedin.com/company/4788674/" class="p-2"><span class="icon-linkedin"></span></a>
 
-      
+              <!-- <a href="#" class="p-2"><span class="icon-youtube"></span></a> -->
+            <!--   <a href="#" class="p-2"><span class="icon-instagram"></span></a> -->
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
 
-      </div>   
-     </div>
-     <div>
-         <div class="topics">
-                <h2 class="h2">Topics</h2>
-                <div class="row">
-                    <div class="icon">
-                    <i class="icon-software-layers2"></i>
-                    <h3>Appium -Talk</br></br></h3>
-                   </div>
-                   <div class="icon">
-                        <i class="icon-software-scale-expand"></i>
-                        <h3>Regression Testing in</br>large enterprise companies</h3>
-                         
-                        </div>
-                        <div class="icon">
-                                <i class="icon-software-pages"></i>
-                                <h3>SEO -TAlk</br></br> </h3>
-                               </div>
-                               <div class="icon">
-                                    <i class="icon-software-vertical-distribute-bottom"></i>
-                                    <h3> BDD (cucumber and ruby) </br></br> </h3>     
-                                   </div>
-                        
-                    </div>
-                </div>
-    </header>
-  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
     
- 
- <div>
-    
+  </body>
+</html>
