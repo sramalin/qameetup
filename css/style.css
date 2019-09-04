@@ -780,5 +780,5 @@ h1, h2, h3, h4, h5,
   line-height: 40px; }
 
   .border-top:last-child>p {
-    font-size: 0.25rem;
+    font-size: 0.75rem;
   }
